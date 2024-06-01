@@ -12,7 +12,7 @@ export default function Root() {
         <Sidebar />
       </div>
 
-      <div className="content_section">
+      <div className="content_wrapper">
         <Header />
         <div className="content_section">
           <Outlet />

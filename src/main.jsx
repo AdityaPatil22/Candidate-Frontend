@@ -2,6 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import CandidateProfilePage from './pages/CandidateProfilePage/CandidateProfilePage.jsx';
+import InterviewPage from "./pages/InterviewPage/InterviewPage.jsx"
 import Root from './Root.jsx';
 
 
@@ -38,6 +40,13 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
+    children: [
+      { index: true, element: <CandidateProfilePage /> },
+      {
+        path: "candidate-interview",
+        element: <InterviewPage />,
+      },
+    ],
   }
 ])
 

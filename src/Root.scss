@@ -1,4 +1,21 @@
-.main-section{
-  scroll-behavior: smooth;
+.main-section {
   display: flex;
+  height: 100vh;
+}
+
+.sidebar_section {
+  width: 300px;
+  flex-shrink: 0;
+}
+
+.content_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.content_section {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
 }

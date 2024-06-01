@@ -1,12 +1,12 @@
 .site_header {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-    padding: 22px 90px 22px 40px;
+    padding: 22px 40px 22px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
+    position: sticky;
     height: 100px;
-    width: 85%;
+    width: 100%;
 
     .header-profile-section{
         display: flex;

@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+
+import { Link, useLocation } from "react-router-dom";
 import ReworkLogo from "../../assets/icons/ReworkLogo";
 import ProfileIcon from "../../assets/icons/ProfileIcon";
 import InterviewIcon from "../../assets/icons/InterviewIcon";
@@ -7,6 +8,9 @@ import { Button } from "@mui/material";
 import "./Sidebar.scss";
 
 function Sidebar() {
+  const location = useLocation();
+  const currentPath = location.pathname;
+
   return (
     <div className="sidebar">
       <div className="logo">
@@ -14,14 +18,14 @@ function Sidebar() {
       </div>
       <nav className="navbar">
         <ul>
-          <li className="active">
+          <li className={currentPath === "/" ? "active" : ""}>
             <Link to="/">
               <ProfileIcon />
               Profile
             </Link>
           </li>
-          <li>
-            <Link to="/">
+          <li className={currentPath === "/candidate-interview" ? "active" : ""}>
+            <Link to="/candidate-interview">
               <InterviewIcon />
               Interviews
             </Link>
