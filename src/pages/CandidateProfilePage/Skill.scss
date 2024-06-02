@@ -1,0 +1,14 @@
+.skill-box {
+    display: inline-block;
+    border: 1px solid #8d68d3;
+    border-radius: 5px;
+    padding: 4px 8px;
+    line-height: 30px;
+    margin-right: 12px;
+    margin-top: 12px;
+
+    .skill {
+        margin: 0;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,230 @@
+.candidate_profile_page_container {
+  margin: 20px 20px 20px 20px;
+  width: 96%;
+
+  .candidate-profile-top-container {
+    width: 100%;
+    height: 184px;
+    border: 2px solid rgba(91, 90, 90, 0.3);
+    border-radius: 12px;
+    padding: 32px;
+    display: flex;
+
+    .candidate-profile-image {
+      width: 120px;
+      height: 120px;
+    }
+
+    .candidate-profile-text-container {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      .candidate-profile-name-contianer {
+        margin-left: 20px;
+
+        .candidate-profile-name {
+          font-size: 28px;
+          margin-bottom: 0px;
+          color: #1e0057;
+        }
+
+        .candidate-profile-domain {
+          font-size: 20px;
+          color: #5c27c0;
+          font-weight: 500;
+          margin-top: 8px;
+        }
+      }
+
+      .candidate-profile-details-outer-contianer {
+        .candidate-profile-email-contianer {
+          display: flex;
+
+          .candidate-profile-email-img {
+            margin: 0px;
+            width: 28px;
+            height: 28px;
+            align-self: center;
+          }
+
+          .candidate-profile-email-text {
+            margin-left: 10px;
+            font-size: 16px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+
+  .candidate-profile-bottom-container {
+    margin-top: 30px;
+    width: 100%;
+    height: 502px;
+    display: flex;
+    justify-content: space-between;
+    .candidate-profile-bottom-left-container {
+      width: 50%;
+
+      .candidate-profile-bottom-left-upper-container {
+        height: 261px;
+        border: 2px solid rgba(91, 90, 90, 0.3);
+        border-radius: 12px;
+        padding: 32px;
+        align-items: center;
+
+        .candidate-profile-heading-container {
+          display: flex;
+          align-items: center;
+
+          .candidate-profile-heading {
+            color: #1e0057;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0px;
+            align-items: center;
+          }
+          .candidate-profile-edit-image {
+            padding-top: 10px;
+            margin-left: 10px;
+            background-color: #fff;
+            border: none;
+            align-items: center;
+          }
+        }
+
+        .candidate-profile-sub-heading {
+          font-size: 20px;
+          font-weight: bold;
+          margin-bottom: 0px;
+          margin-top: 32px;
+        }
+
+        .candidate-profile-heading-personal-container {
+          display: flex;
+          justify-content: space-between;
+
+          .candidate-profile-heading-personal {
+            .candidate-profile-heading-personal-para {
+              font-size: 18px;
+
+              .candidate-profile-heading-personal-span {
+                opacity: 70%;
+              }
+            }
+          }
+        }
+      }
+
+      .candidate-profile-bottom-left-lower-container {
+        height: 211px;
+        border: 2px solid rgba(91, 90, 90, 0.3);
+        border-radius: 12px;
+        margin-top: 30px;
+        padding: 32px;
+
+        .candidate-profile-heading {
+          color: #1e0057;
+          font-size: 24px;
+          font-weight: bold;
+          margin: 0px;
+          align-items: center;
+        }
+
+        .candidate-profile-resume-container {
+          background-color: #efe6ff;
+          height: 71px;
+          width: 90%;
+          margin-top: 32px;
+          display: flex;
+          align-items: center;
+
+          .container-line {
+            background-color: #8d68d3;
+            width: 7px;
+            height: 71px;
+            margin-right: 18px;
+          }
+
+          .candidate-profile-resume-details-container {
+            margin-left: 16px;
+            width: 55%;
+
+            .candidate-profile-resume-name {
+              margin-bottom: 0px;
+              font-size: 16px;
+            }
+
+            .candidate-profile-resume-size {
+              margin-top: 0px;
+              opacity: 70%;
+              font-size: 14px;
+            }
+          }
+
+          .candidate-profile-edit-resume-container {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 30%;
+
+            .candidate-profile-edit-resume-btn {
+              background-color: #efe6ff;
+              border: none;
+            }
+
+            .candidate-profile-edit-resume-tick {
+              width: 24px;
+              height: 24px;
+            }
+          }
+        }
+      }
+    }
+
+    .candidate-profile-bottom-right-container {
+      width: 47%;
+      height: 502px;
+      border: 2px solid rgba(91, 90, 90, 0.3);
+      border-radius: 12px;
+      padding: 32px;
+
+      .candidate-profile-carrier-objective-container {
+        height: 250px;
+        .candidate-profile-heading {
+          color: #1e0057;
+          font-size: 24px;
+          font-weight: bold;
+          margin: 0px;
+          align-items: center;
+        }
+
+        .candidate-profile-carrier-objective-para{
+          opacity: 55%;
+          font-size: 18px;
+          line-height: 160%;
+        }
+      }
+
+      .candidate-profile-skills-container{
+
+        .candidate-profile-heading{
+          color: #1e0057;
+          font-size: 24px;
+          font-weight: bold;
+          margin: 0px;
+          align-items: center;
+        }
+
+        .candidate-profile-skills-section{
+          display: flex;
+          flex-wrap: wrap;
+          height: auto;
+          margin-top: 18px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
