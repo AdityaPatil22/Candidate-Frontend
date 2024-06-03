@@ -4,6 +4,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import CandidateProfilePage from './pages/CandidateProfilePage/CandidateProfilePage.jsx';
 import InterviewPage from "./pages/InterviewPage/InterviewPage.jsx"
+import CandidateMobile from './pages/CandidateMobile/index.jsx'
+import CandidateEnterOtp from './pages/CandidateEnterOtp/index.jsx'
+import CandidateInvalidOtp from './pages/CandidateInvalidOtp/index.jsx'
 import Root from './Root.jsx';
 
 
@@ -47,7 +50,19 @@ const router = createBrowserRouter([
         element: <InterviewPage />,
       },
     ],
-  }
+  },
+  {
+    path: "candidate-mobile",
+    element: <CandidateMobile />
+  },
+  {
+    path: "candidate-enter-otp",
+    element: <CandidateEnterOtp />
+  },
+  {
+    path: "candidate-invalid-otp",
+    element: <CandidateInvalidOtp />
+  },
 ])
 
 

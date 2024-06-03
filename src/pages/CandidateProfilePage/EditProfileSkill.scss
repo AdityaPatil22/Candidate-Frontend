@@ -1,0 +1,23 @@
+.edit-profile-skill{
+    display: inline-block;
+    display: flex;
+    border-radius: 5px;
+    padding: 4px 8px;
+    line-height: 30px;
+    margin-right: 12px;
+    margin-top: 12px;
+    background-color: #D6C7F1;
+    align-items: center;
+
+    .edit-skill{
+        margin: 0;
+        font-size: 14px;
+        align-items: center;
+        margin-right: 5px;
+    }
+
+    .edit-skill-btn{
+        border: none;
+        background-color: #D6C7F1;
+    }
+}

@@ -1,0 +1,110 @@
+.candidate-mobile-outer-container {
+    padding: 30px;
+    height: 100vh;
+
+    .candidate-mobile-inner-container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        background-image: url("../../assets/images/ReworkBackgroundLogo.png");
+        // background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 1;
+
+
+        .candidate-mobile-content-container {
+            background-color: #ffffff;
+            padding: 37px 51px; 
+            border-radius: 12px;
+            height: 359px;
+            width: 525px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+
+            .candidate-text {
+                color: #5C27C0;
+                font-size: 16px;
+                font-weight: 600;
+                align-self: flex-start;
+                margin-bottom: 26px;
+                margin-top: 0px;
+            }
+
+            .login-text {
+                font-size: 38px;
+                color: #310683;
+                margin-bottom: 38px;
+                margin-top: 0px;
+               align-self: flex-start;
+            }
+
+            .candidate-para-and-mobile-input-container {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                margin-bottom: 28px;
+                width: 423px;
+
+                .candidate-para {
+                    font-size: 20px;
+                    color: #000000;
+                    margin-bottom: 16px;
+                    margin-top: 0px;
+                }
+
+                .mobile-number-outer-input-container {
+                    display: flex;
+                    align-items: center;
+                    border: 1px solid #000000;
+                    border-radius: 8px;
+                    height: 60px;
+                    width: 100%;
+
+                    .country-code-select-container{
+                        border-right: 1px solid #000000;
+                        align-self: stretch;
+                        display: flex;
+                        align-items: center;
+                        padding: 10px;
+
+                        .option-text {
+                            font-size: 18px;
+                        }
+                    }
+
+                    .country-code-and-mobile-input {
+                        display: flex;
+                        align-items: center;
+                        height: 100%;
+                        padding-left: 12px;
+
+                        p {
+                            font-size: 18px;
+                            margin: 0 12px 0 0;
+                        }
+
+                        .mobile-number-input {
+                            border: none;
+                            font-size: 18px;
+                            outline: none;
+                        }
+                    }
+
+
+                }
+            }
+        }
+
+
+    }
+}
+
+
+
