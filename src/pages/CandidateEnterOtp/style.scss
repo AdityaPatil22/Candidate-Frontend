@@ -1,0 +1,123 @@
+.candidate-enter-otp-outer-container {
+    padding: 30px;
+    height: 100vh;
+
+    .candidate-enter-otp-inner-container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url("../../assets/images/ReworkBackgroundLogo.png");
+        // background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 1;
+
+        .valid-otp-container{
+            background-color: #EFFFF3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 52px;
+            width: 423px;
+            border-radius: 12px;
+            padding: 10px;
+            margin-bottom: 18px;
+
+            p{
+                color: #0AAE2F;
+                font-size: 16px;
+                margin-left: 10px;
+            }
+        }
+
+
+        .candidate-enter-otp-content-container {
+            background-color: #ffffff;
+            padding: 32px; 
+            border-radius: 12px;
+            height: 506px;
+            width: 486px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+
+            .candidate-text {
+                color: #5C27C0;
+                font-size: 16px;
+                font-weight: 600;
+                align-self: flex-start;
+                margin-bottom: 26px;
+                margin-top: 0px;
+            }
+
+            .login-text {
+                font-size: 38px;
+                color: #310683;
+                margin-bottom: 38px;
+                margin-top: 0px;
+               align-self: flex-start;
+            }
+
+            .enter-otp-text{
+                font-size: 24px;
+                font-weight: 600;
+                margin-bottom: 24px;
+                margin-top: 0px;
+                align-self: flex-start;
+            }
+
+            .otp-input-container{
+                width: 422px;
+            }
+
+            .resend-text-container{
+                display: flex;
+                align-self: center;
+                margin-bottom: 16px;
+
+                .not-recieved-text{
+                    font-size: 16px;
+                    color: #4C4949;
+                    margin-right: 5px;
+                    margin-top: 0px;
+                    margin-bottom: 0px;
+                }
+                .resend-change-mobile-text{
+                    font-size: 18px;
+                    color: #5C27C0;
+                    font-weight: 600;
+                    text-decoration: underline;
+                    cursor: pointer;
+                    margin-top: 0px;
+                    margin-bottom: 0px;
+                }
+
+                
+            }
+            .or-text{
+                margin-bottom: 16px;
+                font-size: 18px;
+                font-weight: 600;
+                margin-top: 0px;
+            }
+            .resend-change-mobile-text{
+                font-size: 18px;
+                color: #5C27C0;
+                font-weight: 600;
+                text-decoration: underline;
+                cursor: pointer;
+                margin-top: 0px;
+            }
+
+        }
+
+
+    }
+}
+
+
+
