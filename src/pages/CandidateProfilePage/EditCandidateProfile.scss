@@ -1,12 +1,161 @@
-.edit-candidate-profile-main-continer{
-    height: 90%;
-    width: 55%;
-    border-radius: 12px;
-    padding: 32px;
-    background-color: #FAF7FF;
+.edit-main-continer {
+  height: 95%;
+  width: 60%;
+  border-radius: 12px;
+  padding: 32px;
+  background-color: #faf7ff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow: auto;
 
-    .edit-candidate-profile-heading{
-        margin: 0px;
-        font-size: 24px;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+
+  .edit-heading {
+    margin: 0px;
+    font-size: 20px;
+    color: #1e0057;
+  }
+
+  .edit-outer-container {
+    display: flex;
+    justify-content: space-between;
+    .edit-inner-container {
+      margin-top: 25px;
+      display: flex;
+      flex-direction: column;
+      width: 47%;
+
+      .edit-label {
+        font-size: 12px;
+        margin-top: 0px;
+      }
+
+      .edit-input {
+        border: none;
+        border-bottom: 1px solid black;
+        outline: none;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 5px 0;
+        background-color: #faf7ff;
+
+        .edit-input:focus {
+          border-bottom: 2px solid black;
+        }
+      }
     }
+  }
+
+  .edit-form-carrier-objective {
+    .edit-inner-container {
+      margin-top: 25px;
+      display: flex;
+      flex-direction: column;
+
+      .edit-label {
+        font-size: 12px;
+        margin-top: 0px;
+      }
+
+      .edit-input {
+        border: none;
+        border-bottom: 1px solid black;
+        outline: none;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 10px 0;
+        background-color: #faf7ff;
+
+        .edit-input:focus {
+          border-bottom: 2px solid black;
+        }
+      }
+    }
+  }
+
+  .edit-form-skills-container {
+    .edit-inner-container {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+
+      .edit-label {
+        font-size: 12px;
+        margin-top: 0px;
+      }
+
+      .edit-input {
+        border: none;
+        border-bottom: 1px solid black;
+        outline: none;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 5px 0;
+        background-color: #faf7ff;
+
+        .edit-input:focus {
+          border-bottom: 2px solid black;
+        }
+      }
+    }
+  }
+
+  .edit-form-resume-container {
+    .resume-container {
+      background-color: #efe6ff;
+      height: 71px;
+      width: 65%;
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+
+      .container-line {
+        background-color: #8d68d3;
+        width: 7px;
+        height: 71px;
+        margin-right: 18px;
+      }
+
+      .resume-details-container {
+        margin-left: 16px;
+        width: 55%;
+
+        .resume-name {
+          margin-bottom: 0px;
+          font-size: 16px;
+        }
+
+        .resume-size {
+          margin-top: 0px;
+          opacity: 70%;
+          font-size: 14px;
+        }
+      }
+
+      .edit-resume-container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 25%;
+
+        .edit-resume-btn {
+          background-color: #efe6ff;
+          border: none;
+        }
+
+        .edit-resume-tick {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+  }
+
+  .edit-form-btn-contianer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
 }
