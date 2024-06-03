@@ -8,8 +8,7 @@ import CandidateMobile from './pages/CandidateMobile/index.jsx'
 import CandidateEnterOtp from './pages/CandidateEnterOtp/index.jsx'
 import CandidateInvalidOtp from './pages/CandidateInvalidOtp/index.jsx'
 import Root from './Root.jsx';
-
-
+import CandidateInformation from "./pages/CandidateInformation/index.jsx"
 const theme = createTheme({
   typography: {
     fontFamily: `"Inter", sans-serif`,
@@ -49,6 +48,10 @@ const router = createBrowserRouter([
         path: "candidate-interview",
         element: <InterviewPage />,
       },
+      {
+        path:"candidate-information",
+        element:<CandidateInformation/>
+      }
     ],
   },
   {

@@ -1,0 +1,112 @@
+// *{
+// margin: 0px;
+// padding: 0px;
+// box-sizing: border-box;
+// }
+.combined-candidate-information{
+    display: flex;
+    position: relative;
+    gap: 20px;
+    flex-direction: column;
+}
+.candidate-information-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h3{
+        color: #3BE02D;
+    }
+  
+}
+.important-keywords-job-role{
+    // font-size: 1.5em;
+    display: flex;
+    position: relative;
+    gap: 12px;
+    .keywords{
+        background: rgb(235, 235, 235);
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 6px;
+        gap: 5px;
+        border-radius: 26px 26px 26px;
+    }
+    }
+    .skill-container{
+        display: flex;
+        gap: 12px;
+        position: relative;
+    .skills{
+        border: solid 2px #5C27C0;
+        padding: 5px;
+        display: flex;
+        padding: 14px;
+        height: 40px;
+        align-items: center;
+        border-radius: 4px 4px 4px 4px;
+    color: #5C27C0;
+    }
+    }
+    .company-details-container{
+        display: flex;
+        padding:10px;
+        position: relative;
+        gap: 30px;
+        font-size: 18px;
+       
+        .company-name{
+            p{
+                margin: 0px;
+                color: #666666;
+            }
+            h3{
+                margin: 0px;
+            }
+        }
+      
+    }
+.interview-tips{
+    display: flex;
+    font-size: 18px;
+  
+   flex-direction: column;
+
+//    justify-content: space-between;
+
+.left-right-tips{
+    display: flex;
+    position: relative;
+    gap: 200px;
+    padding: 10px;
+
+}
+.left.tips{
+    color: #666666;
+}
+.right-tips{
+    color: #666666;
+}
+}
+
+.start-instructions{
+font-size: 19px;
+.main-instruction-for-start{
+    font-size: 25px;
+    font-weight: 500;
+}
+}
+.back-and-start-buttons{
+    display: flex;
+    justify-content: space-between;
+    margin: none !important;
+}
+.candidate-description{
+   font-size: 20px; 
+   color: #666666;
+
+}
+.date-time-container{
+font-size: 20px;
+}
