@@ -20,16 +20,19 @@ function InterviewPage() {
       <TabContext value={value}>
         <Box sx={{ width: "100%" }}>
           <TabList
-            className="abcd"
+            className="tab-list"
             onChange={handleChange}
             aria-label="lab API tabs example"
             sx={{
               "& .MuiTab-root": {
-                width: "50%",
+                width: "25%",
                 color: "#ABABAB",
                 fontSize: "22px",
-                fontWeight: "bold",
+                fontWeight: "600",
                 fontFamily: "Manrope",
+                textTransform: "none",
+                lineHeight: "35px",
+                letterSpacing: "0%",
               },
               "& .MuiTab-textColorInherit": {
                 color: "#5C27C0",
@@ -39,8 +42,8 @@ function InterviewPage() {
               },
               "& .MuiTabs-indicator": {
                 backgroundColor: "#5C27C0",
-                height: "1px",
-              },
+                height: "2px",
+              }
             }}
           >
             <Tab label="Upcoming Interviews" value="1" />
