@@ -4,6 +4,7 @@ import Button from "@mui/material/Button";
 import ResumeIcon from "../../assets/icons/ResumeIcon";
 import ResumeEditPen from "../../assets/icons/ResumeEditPen";
 import ResumeCompleteTick from "../../assets/images/ResumeCompleteTick.png";
+import EditProfileSkill from "./EditProfileSkill"
 import "./EditCandidateProfile.scss";
 
 EditCandidateProfile.propTypes = {
@@ -93,7 +94,11 @@ function EditCandidateProfile({ open, handleClose }) {
               </label>
               <input type="text" className="edit-input"></input>
             </div>
-            <div className="skills-tab">Java</div>
+            <div className="skills-tab">
+            <EditProfileSkill editskillname="Java"/>
+            <EditProfileSkill editskillname="Python"/>
+            <EditProfileSkill editskillname="React"/>
+            </div>
           </div>
 
           <div className="edit-form-resume-container">

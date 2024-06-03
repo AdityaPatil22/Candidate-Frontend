@@ -11,7 +11,6 @@
     display: none;
   }
 
-
   .edit-heading {
     margin: 0px;
     font-size: 20px;
@@ -100,6 +99,13 @@
         }
       }
     }
+    .skills-tab {
+      display: flex;
+      flex-wrap: wrap;
+      height: auto;
+      margin-top: 18px;
+      width: 100%;
+    }
   }
 
   .edit-form-resume-container {
@@ -153,7 +159,7 @@
     }
   }
 
-  .edit-form-btn-contianer{
+  .edit-form-btn-contianer {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
