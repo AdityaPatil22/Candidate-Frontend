@@ -1,0 +1,88 @@
+.upcoming_interviews_main {
+  padding: 20px 30px;
+
+  p {
+    font-size: 16px;
+    font-weight: Medium;
+    font-family: "Inter";
+    color: #5c27c0;
+    line-height: 160%;
+    letter-spacing: 0.15px;
+    margin: 0;
+  }
+  .upcoming-interviews-sections {
+    // margin: 20px 0;
+
+    .upcoming-interviews-company {
+      height: 100px;
+      width: 1060px;
+      padding: 10px 20px;
+      display: flex;
+      background-color: #f3f3f3;
+      border-radius: 20px;
+      margin: 20px 0;
+
+      .company-logo-n-details {
+        display: flex;
+        justify-content: start;
+        gap: 30px;
+
+        .company-logo-section {
+          background-color: #fff;
+          height: 80px;
+          width: 80px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 10px;
+        }
+        .company-iterview-details {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 50px;
+
+          .company-name {
+            p:first-child {
+              font-size: 25px;
+              font-weight: 600;
+              font-family: "Inter";
+              color: #000;
+              line-height: 160%;
+              letter-spacing: 0.15px;
+              margin: 0;
+            }
+            p:last-child {
+              font-size: 16px;
+              font-weight: Medium;
+              font-family: "Inter";
+              color: #000;
+              line-height: 160%;
+              letter-spacing: 0.15px;
+              margin: 0;
+            }
+          }
+          .interviews-details {
+            margin-left: auto;
+            span {
+              font-size: 16px;
+              font-weight: Medium;
+              font-family: "Inter";
+              color: #000;
+              line-height: 160%;
+              letter-spacing: 0.15px;
+              margin: 0 10px;
+            }
+          }
+        }
+      }
+      .company-view-button {
+        margin-left: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+    }
+  }
+}
