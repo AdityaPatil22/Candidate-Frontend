@@ -5,6 +5,7 @@ import d from "../../assets/images/smalldown.svg"
 import CandidateVerificationTick from '../../assets/icons/CandidateVerificationTick'
 import OtpInput from "react-otp-input";
 import Header from "../../components/CandidateHeader/Header";
+import { Link } from "react-router-dom";
 
 export default function CandidateEnterOtp() {
 
@@ -53,30 +54,32 @@ export default function CandidateEnterOtp() {
                     </div>
                     
 
-
-                    <Button
-                        variant="outlined"
-                        sx={{
-                            border: "solid 1px #5C27C0",
-                            color: "#fff",
-                            borderRadius: "4.75px",
-                            width: "163px",
-                            height: "46px",
-                            fontWeight: "400",
-                            textTransform: "capitalize",
-                            background: "#5C27C0",
-                            fontSize: "18px !important",
-                            alignSelf: "center",
-                            marginBottom: "40px",
-                            "&:hover": {
-                                background: "#fff",
-                                color: "#5C27C0",
+                    <Link to="/">
+                        <Button
+                            variant="outlined"
+                            sx={{
                                 border: "solid 1px #5C27C0",
-                            },
-                        }}
-                    >
-                        Login
-                    </Button>
+                                color: "#fff",
+                                borderRadius: "4.75px",
+                                width: "163px",
+                                height: "46px",
+                                fontWeight: "400",
+                                textTransform: "capitalize",
+                                background: "#5C27C0",
+                                fontSize: "18px !important",
+                                alignSelf: "center",
+                                marginBottom: "40px",
+                                "&:hover": {
+                                    background: "#fff",
+                                    color: "#5C27C0",
+                                    border: "solid 1px #5C27C0",
+                                },
+                            }}
+                        >
+                            Login
+                        </Button>
+                    </Link>
+                    
                     <div className='resend-text-container'>
                         <p className='not-recieved-text'>Not received OTP?</p>
                         <p className='resend-change-mobile-text'>Resend OTP</p>

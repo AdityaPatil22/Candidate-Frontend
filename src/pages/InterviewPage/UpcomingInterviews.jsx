@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Button } from "@mui/material";
 import { parse, isBefore } from 'date-fns';
+import { Link } from "react-router-dom";
 import Google from "../../assets/images/Google G.png";
+
 import "./UpcomingInterviews.scss";
 
 function UpcomingInterviews() {
@@ -52,31 +54,34 @@ function UpcomingInterviews() {
                 </div>
               </div>
               <div className="company-view-button">
-                <Button
-                  disabled={buttonStates[index]}
-                  sx={{
-                    height: "46px",
-                    width: "118px",
-                    color: "#fff",
-                    backgroundColor: "#5C27C0",
-                    textTransform: "none",
-                    fontSize: "20px",
-                    fontWeight: "Medium",
-                    fontFamily: "Inter",
-
-                    "&:hover": {
-                      backgroundColor: "#fff",
-                      color: "#5C27C0",
-                      border: "1px solid #5C27C0",
-                    },
-                    "&:disabled": {
+                <Link to="/interview-details">
+                  <Button
+                    disabled={buttonStates[index]}
+                    sx={{
+                      height: "46px",
+                      width: "118px",
                       color: "#fff",
-                      opacity: "0.7",
-                    },
-                  }}
-                >
-                  View
-                </Button>
+                      backgroundColor: "#5C27C0",
+                      textTransform: "none",
+                      fontSize: "20px",
+                      fontWeight: "Medium",
+                      fontFamily: "Inter",
+
+                      "&:hover": {
+                        backgroundColor: "#fff",
+                        color: "#5C27C0",
+                        border: "1px solid #5C27C0",
+                      },
+                      "&:disabled": {
+                        color: "#fff",
+                        opacity: "0.7",
+                      },
+                    }}
+                  >
+                    View
+                  </Button>
+                </Link>
+                
               </div>
             </div>
           ))}
