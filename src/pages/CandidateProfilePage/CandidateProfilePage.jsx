@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ProfileImage from "../../assets/images/ProfileImage.png";
 import CandidateProfilePhone from "../../assets/images/CandidateProfilePhone.png";
 import CandidateProfileMail from "../../assets/images/CandidateProfileMail.png";
@@ -12,7 +12,10 @@ import EditCandidateProfile from "./EditCandidateProfile";
 import "./CandidateProfilePage.scss";
 
 function CandidateProfilePage() {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
+  const [resumeUploaded, setResumeUploaded] = useState(false);
+  const [resumeName, setResumeName] = useState('');
+  const [resumeSize, setResumeSize] = useState('');
 
   const handleClose = () => {
     setOpen(false);
@@ -22,10 +25,24 @@ function CandidateProfilePage() {
     setOpen(true);
   };
 
+  const handleResumeUpload = (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      setResumeName(file.name);
+      setResumeSize((file.size / 1024).toFixed(2) + 'kb');
+      setResumeUploaded(true);
+    }
+  };
+
+  const handleResumeEdit = () => {
+    // This function can be used to handle resume edit functionality
+    document.getElementById('resume-upload-input').click();
+  };
+
   return (
     <div className="candidate_profile_page_container">
       <div className="candidate-profile-top-container">
-        <img className="candidate-profile-image" src={ProfileImage} />
+        <img className="candidate-profile-image" src={ProfileImage} alt="Profile" />
         <div className="candidate-profile-text-container">
           <div className="candidate-profile-name-contianer">
             <h1 className="candidate-profile-name">Elina Downey</h1>
@@ -36,6 +53,7 @@ function CandidateProfilePage() {
               <img
                 className="candidate-profile-email-img"
                 src={CandidateProfileMail}
+                alt="Email"
               />
               <p className="candidate-profile-email-text">elina@gmail.com</p>
             </div>
@@ -44,6 +62,7 @@ function CandidateProfilePage() {
               <img
                 className="candidate-profile-email-img"
                 src={CandidateProfilePhone}
+                alt="Phone"
               />
               <p className="candidate-profile-email-text">1234567890</p>
             </div>
@@ -106,27 +125,48 @@ function CandidateProfilePage() {
             <h1 className="candidate-profile-heading">Resume</h1>
             <div className="candidate-profile-resume-container">
               <div className="container-line"></div>
-              <ResumeIcon />
+           
+              <Button
+                  className="candidate-profile-edit-resume-btn"
+                  sx={{
+                    minWidth: "24px",
+                    padding: "0",
+                  }}
+                  onClick={handleResumeEdit}
+                >
+                 <ResumeIcon />
+                </Button>
+
               <div className="candidate-profile-resume-details-container">
-                <p className="candidate-profile-resume-name">resume-01.pdf</p>
+                <p className="candidate-profile-resume-name">{resumeName || 'No resume uploaded'}</p>
                 <p className="candidate-profile-resume-size">
-                  100kb<span>.</span>complete
+                  {resumeUploaded ? `${resumeSize}.complete` : ''}
                 </p>
               </div>
               <div className="candidate-profile-edit-resume-container">
+                <input
+                  type="file"
+                  id="resume-upload-input"
+                  style={{ display: 'none' }}
+                  onChange={handleResumeUpload}
+                />
                 <Button
                   className="candidate-profile-edit-resume-btn"
                   sx={{
                     minWidth: "24px",
                     padding: "0",
                   }}
+                  onClick={handleResumeEdit}
                 >
                   <ResumeEditPen />
                 </Button>
-                <img
-                  className="candidate-profile-edit-resume-tick"
-                  src={ResumeCompleteTick}
-                />
+                {resumeUploaded && (
+                  <img
+                    className="candidate-profile-edit-resume-tick"
+                    src={ResumeCompleteTick}
+                    alt="Complete"
+                  />
+                )}
               </div>
             </div>
           </div>

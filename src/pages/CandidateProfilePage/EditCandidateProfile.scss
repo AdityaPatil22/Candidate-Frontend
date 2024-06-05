@@ -1,4 +1,4 @@
-.edit-main-continer {
+.edit-main-container {
   height: 95%;
   width: 60%;
   border-radius: 12px;
@@ -20,6 +20,7 @@
   .edit-outer-container {
     display: flex;
     justify-content: space-between;
+
     .edit-inner-container {
       margin-top: 25px;
       display: flex;
@@ -40,7 +41,7 @@
         padding: 5px 0;
         background-color: #faf7ff;
 
-        .edit-input:focus {
+        &:focus {
           border-bottom: 2px solid black;
         }
       }
@@ -67,7 +68,7 @@
         padding: 10px 0;
         background-color: #faf7ff;
 
-        .edit-input:focus {
+        &:focus {
           border-bottom: 2px solid black;
         }
       }
@@ -94,11 +95,31 @@
         padding: 5px 0;
         background-color: #faf7ff;
 
-        .edit-input:focus {
+        &:focus {
           border-bottom: 2px solid black;
         }
       }
+
+      .suggestions-list {
+        background-color: #faf7ff;
+        // border: 1px solid #ccc;
+        border-radius: 4px;
+        max-height: 150px;
+        overflow-y: auto;
+        margin-top: 5px;
+        // position: absolute;
+
+        .suggestion-item {
+          padding: 8px;
+          cursor: pointer;
+
+          &:hover {
+            background-color: #f0f0f0;
+          }
+        }
+      }
     }
+
     .skills-tab {
       display: flex;
       flex-wrap: wrap;
@@ -159,7 +180,7 @@
     }
   }
 
-  .edit-form-btn-contianer {
+  .edit-form-btn-container {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
